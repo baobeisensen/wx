@@ -13,7 +13,7 @@
 
     <view class="text">
         <view class="line_flag"></view>
-        <text>主题馆1</text>
+        <text>推荐精品</text>
     </view>
     
     <view class="venues_box">
@@ -33,7 +33,7 @@
         <text>环球精选</text>
     </view>
 
-    <!-- <view class="choice_box">
+    <view class="choice_box">
         <view class="choice_list">
             <block wx:for="{{choiceItems}}">
                 <navigator url="../details/index?id={{item.id}}">
@@ -44,7 +44,7 @@
                 </navigator>
             </block>
         </view>
-    </view> -->
+    </view>
 
     <loading hidden="{{loadingHidden}}">
         加载中...
