@@ -2,7 +2,8 @@
 <view class="container">
     <view>
         <swiper class="swiper_box" indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
-                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange"
+indicator-active-color="{{red}}">
             <block wx:for="{{images}}" wx:for-index="index" wx:key="key">
                 <swiper-item>
                     <image src="{{item}}" class="slide-image"/>
@@ -15,39 +16,44 @@
         <view class="line_flag"></view>
         <text>推荐精品</text>
     </view>
-    
-    <view class="venues_box">
+    <view class="view">
+      <image src="https://gd1.alicdn.com/imgextra/i1/3709723567/O1CN016zxwuf1cDjLRSVtHF_!!3709723567.jpg_400x400.jpg" class="ls"/>
+      <image src="https://gd1.alicdn.com/imgextra/i1/3709723567/O1CN01wWnpjG1cDjKrwnyal_!!3709723567.jpg" class="ls"/>
+    </view>
+    <view class="view">
+      <image src="https://gd4.alicdn.com/imgextra/i4/3709723567/O1CN01ouJLiA1cDjLO134gD_!!3709723567.jpg" class="ls"/>
+      <image src="https://gd2.alicdn.com/imgextra/i2/3709723567/O1CN01pHg4qY1cDjJr3L5Rm_!!3709723567.jpg_400x400.jpg" class="ls"/>
+    </view>
+    <!-- <view class="venues_box">
         <view class="venues_list">
-            <block wx:for="{{venuesItems}} " wx:key="key">
+            <block wx:for="{{productItem}} " wx:for-index="index" wx:key="key">
                 <view class="venues_item">
-                    <navigator url="../brand/index?id={{item.id}}">
-                        <image src="{{item.smallpic}}"/>
-                    </navigator>
+                  <image src="{{item}}"/>
                 </view>
             </block>
         </view>
-    </view>
+    </view> -->
 
-    <view class="text">
+    <!-- <view class="text">
         <view class="line_flag"></view>
         <text>环球精选</text>
-    </view>
+    </view> -->
 
-    <view class="choice_box">
+    <!-- <view class="choice_box">
         <view class="choice_list">
-            <block wx:for="{{choiceItems}}">
-                <navigator url="../details/index?id={{item.id}}">
-                    <view class="choice_item">
-                        <image src="{{item.goodspics}}"/>
-                        <view class="title">{{item.title}}</view>
-                    </view>
-                </navigator>
-            </block>
+            <block wx:for="{{choiceItems}}"> -->
+                <!-- <navigator url="../details/index?id={{item.id}}"> -->
+                    <!-- <view class="choice_item"> -->
+                         <!-- <image src="{{item}}"/> -->
+                        <!-- <view class="title">{{item}}</view>
+                    </view> -->
+                <!-- </navigator> -->
+            <!-- </block>
         </view>
-    </view>
+    </view> -->
 
-    <loading hidden="{{loadingHidden}}">
+    <!-- <loading hidden="{{loadingHidden}}">
         加载中...
-    </loading>
+    </loading> -->
 
 </view>
